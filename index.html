@@ -1,10 +1,155 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Website</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <p>Welcome to my GitHub Pages site.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research | Proof Complexity</title>
+
+  <!-- KaTeX for LaTeX-style math -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-G0jv1YkCkYF1fbD9kZVtqXRSrtf5kHUwM0UEwR2iRgGdPVsQt1zArKeP0p1McZ0x" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+  <!-- Clean serif font similar to LaTeX (Latin Modern) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Latin+Modern+Roman&display=swap">
+
+  <style>
+    :root {
+      --red: #b30000;
+      --darkred: #7a0000;
+      --text: #222;
+      --background: #ffffff;
+    }
+
+    body {
+      font-family: 'Latin Modern Roman', serif;
+      background: var(--background);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--red);
+      color: white;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+
+    header h2 {
+      margin: 0.5rem 0 0;
+      font-weight: 300;
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background: var(--darkred);
+      padding: 0.7rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1.05rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h3 {
+      border-left: 4px solid var(--red);
+      padding-left: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      color: #777;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="your-photo.jpg" alt="Your Photo" style="width:160px;height:160px;border-radius:50%;object-fit:cover;border:4px solid white;margin-bottom:1rem;" />
+    <h1>Your Name</h1>
+    <h2>PhD Researcher — Proof Complexity, Pseudo-Boolean Methods, Cutting Planes</h2>
+  </header>
+
+  <nav>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="research">
+      <h3>Research Overview</h3>
+      <p>
+        I study <strong>proof complexity</strong> with a focus on the power and limitations of
+        <em>Pseudo-Boolean</em> proof systems and <em>Cutting Planes</em>. These systems
+        form some of the most expressive and geometrically meaningful approaches to
+        propositional reasoning.
+      </p>
+
+      <p>
+        Much of my work relates to lower bounds, automatability questions, and
+        connections between algebraic and geometric viewpoints on proofs. In particular,
+        I am interested in the complexity of refuting Boolean formulas using linear
+        inequalities.
+      </p>
+
+      <p>
+        Example of math typeset with LaTeX style:
+        $$
+          \sum_{i=1}^n a_i x_i \ge b,
+        $$
+        a typical Pseudo-Boolean constraint.
+      </p>
+    </section>
+
+    <section id="publications">
+      <h3>Publications</h3>
+      <ul>
+        <li>Author Name, <em>Title of Paper</em>, Conference/Journal, Year.</li>
+        <li>Author Name, <em>Another Paper</em>, Venue, Year.</li>
+      </ul>
+    </section>
+
+    <section id="teaching">
+      <h3>Teaching</h3>
+      <p>
+        I have assisted in courses related to logic, computational complexity, and discrete mathematics.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername">yourusername</a></p>
+    </section>
+  </main>
+
+  <footer>
+    © Your Name — Proof Complexity Research
+  </footer>
+</body>
 </html>
